@@ -1,0 +1,4 @@
+background: #171829; dark blue
+buttons : #F46C95; pink
+hoover state: #7379E1: blue
+cards- background: #23283E; dark grey

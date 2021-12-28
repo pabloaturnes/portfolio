@@ -1,0 +1,559 @@
+html{
+    font-size: 15px;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-size: 1rem;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color:#171829;
+    padding: 0 3rem;
+}
+
+
+/* Header Styles */
+
+header{
+    width: 100%;
+    height: 15vh;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#F46C95;
+    font-size: 1.5rem;
+}
+
+.menu-button{
+    cursor: pointer;
+    font-size: 3rem;
+    color: #F46C95;
+    display: none;
+}
+
+
+/* Welcome Styles */
+
+.welcome{
+    min-height: 85vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+h1{
+    font-size: 6rem;
+    margin: 1rem 0;
+    color: #F46C95;
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+    color: #F46C95;
+    margin-top: 1rem;
+}
+
+/* Sobre Mi Styles */
+
+.sobre-mi{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    flex-direction: column;
+}
+
+h3{
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0 5rem 0;
+    color: #F46C95;
+}
+
+.sobre-mi .card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.foto-personal img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+}
+
+.introduccion{
+    width: 40%;
+}
+
+.introduccion p{
+    font-size: 1.5rem;
+    text-align: start;
+    letter-spacing: 0.1rem;
+}
+
+/* Skills Styles */
+
+.skills{
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+
+ .skills .card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hard-skills{
+    width: 50%;
+}
+
+.hard-skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.hard-skill{
+    background-color: white;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+}
+
+.hard-skill img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+
+.soft-skills{
+    width: 50%;
+}
+
+.soft-skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.soft-skill{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+    background-color: #7379E1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.soft-skill i{
+    font-size: 3rem;
+}
+
+.soft-skill p{
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+
+/* Curriculum Styles */
+
+.curriculum{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.curriculum .card{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.cv-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F46C95;
+    width: 20rem;
+    border-radius: 1.5rem;
+}
+
+.title{
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.year{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cv-link{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    background-color:#7379E1;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.cv-item a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem; 
+    color: white;
+    
+}
+
+
+/* Proyectos Styles */
+
+.proyectos{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.selectors-container{
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+}
+
+.selectors-container button{
+    cursor: pointer;
+}
+
+.components-button{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 4rem; 
+}
+
+.components-button i{
+    font-size: 3rem;
+}
+
+.sites-button{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 4rem;
+}
+
+.sites-button i{
+    font-size: 3rem;
+}
+
+.apps-button{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 4rem; 
+}
+
+.apps-button i{
+    font-size: 3rem;
+}
+
+.components-container, .sites-container, .apps-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.proyectos .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #F46C95;
+    margin: 2rem 0;
+    border-radius: 1.6rem;
+
+    
+}
+
+.proyectos h4{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.img-container{
+    width: 30rem;
+    height: 20rem;
+    border-radius: 1.6rem;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+}
+
+.img-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 20rem;
+}
+
+.img-description ul{
+    margin-top: 1rem;
+}
+
+.img-description li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 0.5rem 0 0.5rem 0
+}
+
+.card-links{
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.vivo-link{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.3rem 0.5rem;
+    background-color: #7379E1;
+    border-radius: 1.5rem;
+}
+
+.git-link i{
+    color: #7379E1;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+
+
+/* Contacto Styles */
+
+.contacto{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.contact-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-form h4{
+    color: #F46C95;
+    font-size: 2rem;
+}
+
+.contact-form input, .contact-form textarea {
+    font-size: 1.2rem;
+    color: #F46C95;
+    padding: 0.4rem 0.6rem;
+    width: 65%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 10rem;
+}
+
+.contact-form input::placeholder, textarea::placeholder{
+    color: #F46C95; 
+}
+
+.contact-form button{
+    width: 25%;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #F46C95;
+    color: white;
+}
+
+
+.contact-links{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.first-column, .second-column, .third-column, .four-column{
+    display: flex;
+    height: 100%;
+    height: 30rem;
+    width: 10rem;
+}
+
+.first-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-column{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+.third-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-links a{
+    text-align: center;
+}
+
+.contact-links i{
+    font-size: 4rem;
+    color: #F46C95;
+}
+
+
+
+
+
+
+@media (max-width: 840px){
+
+    nav ul{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+        position: absolute;
+        z-index: 100;
+    }
+
+
+    .welcome{
+        justify-content: center;
+    }
+
+
+    h3{
+        font-size: 2rem ;
+    }
+
+    .foto-personal img{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+    }
+    
+    .introduccion{
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+
+
+
+    .img-container{
+        width: 100%;
+    }
+
+    .hard-skills{
+        width: 100%;
+    }
+
+
+    .soft-skills{
+        margin: 2rem 0 4rem 0;
+        width: 100%;
+    }
+
+
+
+
+
+    .contact-form{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-form input, .contact-form textarea{
+        width: 100%;
+    }
+
+    .contact-form button{
+        width: 100%;
+    }
+
+}
