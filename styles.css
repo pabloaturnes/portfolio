@@ -3,6 +3,7 @@ html{
     box-sizing: border-box;
     color: white;
     scroll-behavior: smooth;
+    font-family: 'Roboto', italic,  sans-serif;
 }
 
 *{
@@ -10,6 +11,7 @@ html{
     padding: 0;
     box-sizing: inherit;
     font-size: 1rem;
+    font-family: 'Roboto', italic,  sans-serif;
 }
 
 body{
@@ -49,7 +51,26 @@ nav ul li a{
     text-decoration: none;
     color:#F46C95;
     font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
 }
+
+nav ul li a::before{
+    content: " ";
+    width: 0;
+    height: 0.5rem;
+    background-color: #F46C95;
+    position: absolute;
+    bottom: -0.7rem;
+    transition: all 0.4s ease-in-out;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+
+
 
 .menu-button{
     cursor: pointer;
@@ -71,39 +92,14 @@ nav ul li a{
 
 
 
-h1{
-    font-size: 6rem;
-    margin: 1rem 0;
-    color: #F46C95;
-    text-align: center;
-}
-
-h2{
-    font-size: 2rem;
-    text-align: center;
-    color: #F46C95;
-    margin-top: 1rem;
-}
-
-/* Sobre Mi Styles */
-
-.sobre-mi{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content:start;
-    flex-direction: column;
-}
-
 h3{
     font-size: 3rem;
     text-align: center;
-    margin: 2rem 0 5rem 0;
+    margin: 2rem 0 2rem 0;
     color: #F46C95;
 }
 
-.sobre-mi .card{
+.welcome .card{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -112,20 +108,48 @@ h3{
 
 }
 
+.foto-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
 .foto-personal img{
-    width: 25rem;
-    height: 25rem;
-    border-radius: 50%;
+    width: 24rem;
+    height: 26rem;
+    filter: hue-rotate(287deg); 
+}
+
+h1{
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+    color: #F46C95;
+    text-align: center;
+}
+
+hr{
+    width: 80%;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #F46C95;
+    margin-top: 1rem;
 }
 
 .introduccion{
-    width: 40%;
+    width: 50%;
 }
 
 .introduccion p{
     font-size: 1.5rem;
     text-align: start;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.3rem;
+    line-height: 2rem;
+    color: #F46C95;
 }
 
 /* Skills Styles */
@@ -140,6 +164,7 @@ h3{
  .skills .card{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 7rem;
 }
 
 .hard-skills{
@@ -150,7 +175,6 @@ h3{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: space-around;
 }
 
 .hard-skill{
@@ -158,6 +182,9 @@ h3{
     width: 7rem;
     height: 7rem;
     border-radius: 1rem;
+    border: 5px solid #7379E1;
+    box-shadow: -1px -1px 37px 5px rgba(115,121,225,0.61);
+    cursor: pointer;
 }
 
 .hard-skill img{
@@ -175,7 +202,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: space-around;
+
 }
 
 .soft-skill{
@@ -187,6 +214,9 @@ h3{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 5px solid #F46C95;
+    box-shadow: -1px -1px 37px 5px rgba(244,108,149,0.6);
+    cursor: pointer;
 }
 
 .soft-skill i{
@@ -211,6 +241,7 @@ h3{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 7rem;
     gap: 2rem;
 }
 
@@ -222,6 +253,9 @@ h3{
     background-color: #F46C95;
     width: 20rem;
     border-radius: 1.5rem;
+    border: 5px solid white;
+    box-shadow: -1px -1px 37px 5px rgba(255,255,255,0.61);
+    
 }
 
 .title{
@@ -239,7 +273,7 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5rem;
+    height: 2.5rem;
     background-color:#7379E1;
     border-radius: 0 0 1.5rem 1.5rem;
 }
@@ -247,9 +281,8 @@ h3{
 .cv-item a{
     text-decoration: none;
     text-align: center;
-    font-size: 1.5rem; 
+    font-size: 1rem; 
     color: white;
-    
 }
 
 
@@ -264,21 +297,31 @@ h3{
     display: flex;
     justify-content: center;
     height: 10rem;
+    margin-top: 5rem;
 }
 
 .selectors-container button{
     cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in;
 }
 
 .components-button{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    width: 4rem; 
+    width: 4rem;
 }
+
 
 .components-button i{
     font-size: 3rem;
+    color: #F46C95;
+    background-color:#171829;
+}
+
+.components-button button:hover{
+    text-shadow: 1px 1px 30px rgb(244, 108, 149);
 }
 
 .sites-button{
@@ -290,6 +333,12 @@ h3{
 
 .sites-button i{
     font-size: 3rem;
+    color:#7379E1;
+    background-color:#171829;
+}
+
+.sites-button button:hover{
+    text-shadow: 1px 1px 30px rgba(115, 121, 225, 1);
 }
 
 .apps-button{
@@ -301,6 +350,12 @@ h3{
 
 .apps-button i{
     font-size: 3rem;
+    color:brown;
+    background-color:#171829;
+}
+
+.apps-button button:hover{
+    text-shadow: 1px 1px 30px rgba(165, 42, 42, 1);
 }
 
 .components-container, .sites-container, .apps-container{
@@ -314,19 +369,18 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
     background-color: #F46C95;
     margin: 2rem 0;
     border-radius: 1.6rem;
-
-    
+    box-shadow: -1px -1px 37px 5px rgba(244,108,149,0.6);
 }
 
 .proyectos h4{
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
-
+    margin-bottom: 2rem;
+    color: #F46C95;
 }
 
 .img-container{
@@ -345,8 +399,11 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    max-width: 20rem;
+    align-items: center;
+    width: 20rem;
+    padding: 0 1rem 0 1rem;
 }
+
 
 .img-description ul{
     margin-top: 1rem;
@@ -355,13 +412,19 @@ h3{
 .img-description li{
     list-style: none;
     font-size: 1.3rem;
-    margin: 0.5rem 0 0.5rem 0
+    margin: 1.5rem 0 1.5rem 0;
+    text-align: center;
+    color: #23283E;
+   
 }
 
+
+
+
 .card-links{
-    margin: 1rem 0 1rem 0;
     display: flex;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 .vivo-link{
@@ -371,7 +434,13 @@ h3{
     padding: 0.3rem 0.5rem;
     background-color: #7379E1;
     border-radius: 1.5rem;
+    transition: all 0.4s ease-in-out;
 }
+
+.vivo-link:hover{
+    border-radius: 0;
+}
+
 
 .git-link i{
     color: #7379E1;
@@ -418,6 +487,7 @@ h3{
     border-radius: 1rem;
     border: none;
     outline: none;
+    box-shadow: -1px -1px 37px 5px rgba(244,108,149,0.6);
 }
 
 .contact-form textarea{
@@ -437,6 +507,12 @@ h3{
     cursor: pointer;
     background-color: #F46C95;
     color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form button:hover{
+    background-color: #7379E1;
+    box-shadow: -1px -1px 37px 5px rgba(115,121,225,0.61);
 }
 
 
@@ -444,6 +520,7 @@ h3{
     width: 50%;
     display: flex;
     justify-content: center;
+    
 
 }
 
@@ -476,11 +553,18 @@ h3{
 
 .contact-links a{
     text-align: center;
+    
 }
 
 .contact-links i{
     font-size: 4rem;
     color: #F46C95;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.contact-links i:hover{
+    text-shadow: 1px 1px 30px rgba(244, 108, 149, 1);
 }
 
 
@@ -511,14 +595,19 @@ h3{
     }
 
     .foto-personal img{
-        width: 15rem;
-        height: 15rem;
-        border-radius: 50%;
+        width: 19rem;
+        height: 20rem;
+
     }
     
     .introduccion{
         width: 100%;
         margin: 2rem 0;
+    }
+
+    .introduccion p{
+        font-size: 1.5rem;
+        text-align: center;
     }
 
 
@@ -532,10 +621,35 @@ h3{
         width: 100%;
     }
 
+    .hard-skills-container{
+        justify-content: space-between;
+    }
+
 
     .soft-skills{
         margin: 2rem 0 4rem 0;
         width: 100%;
+    }
+
+    .soft-skills-container{
+        justify-content: space-between;
+    }
+
+
+
+    .proyectos .card{
+        max-width: 20rem;
+    }
+
+    .img-container{
+        width: 20rem;
+        height: 14rem;
+        border-radius: 1.6rem;
+    }
+
+    .img-description{
+        width: 20rem;
+
     }
 
 

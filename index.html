@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
     <title>Pablo Turnes</title>
@@ -12,7 +15,6 @@
     <header>
         <nav> 
             <ul>
-                <li> <a href="#sobre-mi">Sobre Mi</a> </li>
                 <li> <a href="#skills">Skills</a> </li>
                 <li> <a href="#curriculum">Curriculum</a></li>
                 <li> <a href="#proyectos">Proyectos</a> </li>
@@ -24,23 +26,20 @@
 
     <main>
         <section id="welcome" class="welcome">
-            <div>
-                <h1>Pablo Turnes</h1>
-                <hr>
-                <h2>Desarrollador Web</h2>
-            </div>
-        </section>
-
-        <section id="sobre-mi" class="sobre-mi">
-            <h3>___ Sobre Mi ___</h3>
             <div class="card">
-                <section class="foto-personal">
-                    <img src="images/foto-cv.jpeg" alt="">
-                </section>
-                <section class="introduccion">
+                <div class="foto-container">
+                    <div class="foto-personal">
+                        <img src="images/foto-cv.png" alt="">
+                    </div>
+                    <h1>Pablo Turnes</h1>
+                    <hr>
+                    <h2>Desarrollador Web</h2>
+                </div>
+                <div class="introduccion">
                     <p>Hola, mi nombre es Pablo. Soy un desarrollador web ubicado en la ciudad de Cordoba, Argentina. Si estas buscando un colaborador que trabaje de manera apasionada en alguno de tus proyectos, estas en el lugar indicado. Te invito a que conozcas mis habilidades, mis motivaciones y algunos de mis trabajos. </p>
-                </section>
+                </div>
             </div>
+            
         </section>
 
         <section id="skills" class="skills">
@@ -131,40 +130,32 @@
                     <div class="cv-link">
                         <a href="https://nucba.com.ar/" target="_blank">NuCBA</a>
                     </div>
-                    
                 </div>
+
                 <div class="cv-item">
                     <p class="title">Full Stack Developer PHP </p>
                     <p class="year">2020-2021</p>
                     <div class="cv-link">
                         <a href="https://depcsuite.com" target="_blank">DePc Suite</a>
                     </div>
-                    
                 </div>
+
                 <div class="cv-item">
                     <p class="title">Mediador Profesional</p>
                     <p class="year">2020</p>
                     <div class="cv-link">
                         <a href="http://estrategiascordoba.blogspot.com/p/profesionales.html" target="_blank">Fundacion Estrategias</a>
                     </div>
-                    
                 </div>
-                <div class="cv-item">
-                    <p class="title">Diplomado en Derecho Laboral</p>
-                    <p class="year">2018</p>
-                    <div class="cv-link">
-                        <a href="https://www.abogado.org.ar/" target="_blank">Colegio de Abogados de Cordoba</a>
-                    </div>
-                    
-                </div>
+
                 <div class="cv-item">
                     <p class="title">Escribano</p>
                     <p class="year">2018</p>
                     <div class="cv-link">
                         <a href="https://21.edu.ar/" target="_blank">Universidad Siglo XXI</a>
                     </div>
-                    
                 </div>
+
                 <div class="cv-item">
                     <p class="title">Abogado</p>
                     <p class="year">2017</p>
@@ -172,8 +163,8 @@
                         <a href="https://www.unc.edu.ar/" target="_blank">Universidad Nacional de Cordoba</a>
                     </div>
                 </div>
-
             </div>
+
         </section>
 
         <section id="proyectos" class="proyectos">
@@ -197,8 +188,8 @@
                     </button>
                 </div>
             </div>
-            <div class="components-container">
 
+            <div class="components-container">
                 <h4>Componentes</h4>
 
                 <div class="card">
@@ -207,8 +198,7 @@
                     </div>
                     <div class="img-description">
                         <ul>
-                            <li>Componente Tarjeta Simple</li>
-                            <li>Descripcion: Tarjeta con imagenes</li>
+                            <li>Tarjeta con imagenes y enlaces</li>
                             <li>Tecnologias: Html, CSS.</li>
                         </ul>
                         <div class="card-links">
@@ -224,8 +214,7 @@
                     </div>
                     <div class="img-description">
                         <ul>
-                            <li>Componente Tarjeta Simple</li>
-                            <li>Descripcion: Tarjeta con imagenes</li>
+                            <li>Tarjeta con imagenes y enlaces</li>
                             <li>Tecnologias: Html, CSS.</li>
                         </ul>
                         <div class="card-links">
@@ -242,8 +231,7 @@
                     </div>
                     <div class="img-description">
                         <ul>
-                            <li>Componente Tarjeta Simple</li>
-                            <li>Descripcion: Tarjeta con imagenes</li>
+                            <li>Tarjeta con imagenes y enlaces</li>
                             <li>Tecnologias: Html, CSS.</li>
                         </ul>
                         <div class="card-links">
@@ -260,8 +248,7 @@
                     </div>
                     <div class="img-description">
                         <ul>
-                            <li>Componente Tarjeta Simple</li>
-                            <li>Descripcion: Componente con imagenes, menu flotante y fijo en version mobile</li>
+                            <li>Componente con imagenes, menu flotante y fijo en version mobile</li>
                             <li>Tecnologias: Html, CSS, Js.</li>
                         </ul>
                         <div class="card-links">
@@ -276,9 +263,8 @@
                         <a target="_blank" href="https://stats-preview-card-flame.vercel.app/"><img src="images/stats-preview-card.png" alt=""></a>
                     </div>
                     <div class="img-description">
-                        <ul>
-                            <li>Componente Tarjeta Simple</li>
-                            <li>Descripcion: Componente con imagenes</li>
+                        <ul>   
+                            <li>Tarjeta con imagenes y enlaces</li>
                             <li>Tecnologias: Html, CSS</li>
                         </ul>
                         <div class="card-links">
@@ -294,8 +280,7 @@
                     </div>
                     <div class="img-description">
                         <ul>
-                            <li>Landing page con preguntas y respuestas</li>
-                            <li>Descripcion: Landing page con acordeon de preguntas y respuestas</li>
+                            <li>Landing page con acordeon de preguntas y respuestas</li>
                             <li>Tecnologias: Html, CSS, Js</li>
                         </ul>
                         <div class="card-links">
@@ -317,8 +302,8 @@
                     </div>
                     <div class="img-description">
                         <ul>
-                            <li>Landing page con formulario</li>
-                            <li>Descripcion: Landing page con validacion de formulario de correo electronico</li>
+
+                            <li>Landing page con validacion de formulario de correo electronico</li>
                             <li>Tecnologias: Html, CSS, Js</li>
                         </ul>
                         <div class="card-links">
@@ -334,8 +319,7 @@
                     </div>
                     <div class="img-description">
                         <ul>
-                            <li>Landing page con formulario de registro</li>
-                            <li>Descripcion: Landing page con validacion de formulario de registro</li>
+                            <li>Landing page con validacion de formulario de registro</li>
                             <li>Tecnologias: Html, CSS, Js</li>
                         </ul>
                         <div class="card-links">
@@ -351,8 +335,7 @@
                     </div>
                     <div class="img-description">
                         <ul>
-                            <li>Landing page con validacion de formulario</li>
-                            <li>Descripcion: Landing page con validacion de formulario de email</li>
+                            <li>Landing page con validacion de formulario de email</li>
                             <li>Tecnologias: Html, CSS, Js</li>
                         </ul>
                         <div class="card-links">
@@ -369,8 +352,7 @@
                     </div>
                     <div class="img-description">
                         <ul>
-                            <li>Landing page con preguntas y respuestas</li>
-                            <li>Descripcion: Landing page con acordeon de preguntas y respuestas</li>
+                            <li>Landing page con acordeon de preguntas y respuestas</li>
                             <li>Tecnologias: Html, CSS, Js</li>
                         </ul>
                         <div class="card-links">
@@ -387,8 +369,8 @@
                     </div>
                     <div class="img-description">
                         <ul>
-                            <li>Landing page</li>
-                            <li>Descripcion: Landing page con algunos componentes con iconos</li>
+
+                            <li>Landing page con componentes e imagenes</li>
                             <li>Tecnologias: Html, CSS</li>
                         </ul>
                         <div class="card-links">
@@ -404,8 +386,7 @@
                     </div>
                     <div class="img-description">
                         <ul>
-                            <li>Landing page</li>
-                            <li>Descripcion: Landing page con algunos componentes con iconos</li>
+                            <li>Landing page con componentes e imagenes</li>
                             <li>Tecnologias: Html, CSS</li>
                         </ul>
                         <div class="card-links">
@@ -423,7 +404,6 @@
                     <div class="img-description">
                         <ul>
                             <li>Landing page con componentes e imagenes</li>
-                            <li>Descripcion: Landing page con componentes e imagenes</li>
                             <li>Tecnologias: Html, CSS</li>
                         </ul>
                         <div class="card-links">
@@ -440,7 +420,6 @@
                     <div class="img-description">
                         <ul>
                             <li>Landing page con componentes e imagenes</li>
-                            <li>Descripcion: Landing page con componentes e imagenes</li>
                             <li>Tecnologias: Html, CSS</li>
                         </ul>
                         <div class="card-links">
