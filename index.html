@@ -12,7 +12,7 @@
     <title>Pablo Turnes</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav> 
             <ul>
                 <li> <a href="#skills">Skills</a> </li>
@@ -457,11 +457,11 @@
                     </div>
                 </div>
 
-                <form class="contact-form">
+                <form class="contact-form" action="https://formsubmit.co/pabloaturnes@gmail.com" method="POST">
                     <h4>Escribime!</h4>
-                    <input type="text" id="nombre" placeholder="Nombre...">
-                    <input type="email" id="email" placeholder="Email...">
-                    <textarea id="mensaje" placeholder="Deja tu mensaje..."></textarea>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre...">
+                    <input type="email" id="email" name="email" placeholder="Email...">
+                    <textarea id="mensaje" name="mensaje" placeholder="Deja tu mensaje..."></textarea>
                     <button type="submit">Enviar</button>
                 </form>
 
@@ -470,7 +470,7 @@
 
         </section>
     </main>
-
+    <a href="#header"><i class="bi bi-arrow-up-circle-fill arrow-up"></i></a>
     <script src="js.js" type="module"></script>
 </body>
 </html>
