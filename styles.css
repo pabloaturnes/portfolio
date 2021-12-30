@@ -484,11 +484,17 @@ h2{
     font-size: 2rem;
 }
 
+
+.contact-form div{
+    width: 65%;
+    position: relative;
+}
+
 .contact-form input, .contact-form textarea {
     font-size: 1.2rem;
     color: #F46C95;
     padding: 0.4rem 0.6rem;
-    width: 65%;
+    width: 100%;
     border-radius: 1rem;
     border: none;
     outline: none;
@@ -502,6 +508,22 @@ h2{
 
 .contact-form input::placeholder, textarea::placeholder{
     color: #F46C95; 
+}
+
+.error-icon{
+    color: red;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0.3rem;
+    right: 1.5rem;
+}
+
+.error-msj{
+    color: red;
+    font-size: 1rem;
+    position: absolute;
+    right: 1.5rem;
+    bottom: -1.5rem;
 }
 
 .contact-form button{
@@ -730,6 +752,10 @@ h2{
         width: 100%;
         align-items: center;
         justify-content: center;
+    }
+
+    .contact-form div{
+        width: 100%;
     }
 
     .contact-form input, .contact-form textarea{
