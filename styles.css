@@ -40,7 +40,6 @@ nav{
 nav ul{
     display: flex;
     flex-direction: row;
-    overflow: hidden;
 }
 
 nav ul li{
@@ -56,9 +55,13 @@ nav ul li a{
     position: relative;
 }
 
+
+
+
+
 nav ul li a::before{
     content: " ";
-    width: 0;
+    width: 0%;
     height: 0.5rem;
     background-color: #F46C95;
     position: absolute;
@@ -69,6 +72,7 @@ nav ul li a::before{
 nav ul li a:hover::before{
     width: 100%;
 }
+
 
 
 
