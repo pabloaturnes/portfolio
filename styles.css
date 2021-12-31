@@ -648,9 +648,9 @@ h2{
 .arrow-up{
     color: yellow;
     position: sticky;
-    font-size: 5rem;
     left: 120rem;
     bottom: 5rem;
+    font-size: 0;
     opacity: 0;
     height: 0;
     z-index: 50;
@@ -660,6 +660,7 @@ h2{
 .arrow-active{
     opacity: 0.5;
     height: 100%;
+    font-size: 5rem;
     
 }
 
@@ -825,7 +826,7 @@ h2{
 
 
 
-    .arrow-up{
+    .arrow-active{
         font-size: 4rem;
     }
 

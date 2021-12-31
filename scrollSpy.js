@@ -3,7 +3,9 @@ export default function scrollSpy(){
     let $arrowButton = document.querySelector(".arrow-up");
 
     // el breakpoint que se observará (seccion skills)
-    const $breakpoint = document.querySelector("#skills");
+    const $skillsBreakpoint = document.querySelector("#skills");
+    // el segundo breakpoint que se observara (seccion welcome)
+    const $welcomeBreakpoint = document.querySelector("#welcome");
 
 
     //creamos una callback para facilitar el manejo del objeto observador
@@ -15,7 +17,12 @@ export default function scrollSpy(){
         objetoObservado.forEach(entry => {
 
             if(entry.isIntersecting){
-                $arrowButton.classList.toggle("arrow-active");
+
+                if(entry.target == $welcomeBreakpoint)
+                $arrowButton.classList.remove("arrow-active");
+
+                if(entry.target == $skillsBreakpoint)
+                $arrowButton.classList.add("arrow-active");
             }
             
         });
@@ -23,9 +30,12 @@ export default function scrollSpy(){
 
     }
 
-    //creamos un objeto observador
-    const observer = new IntersectionObserver(cb,{});
+    //creamos un objeto observador, tiene como parametro una callback y un objeto que servira para setear las propiedades del objeto
+    const observer = new IntersectionObserver(cb,{
+        threshold: ".5"
+    });
 
     // utilizamos la funcion observe del objeto y le asignamos como parametro el elemento que queremos observar
-    observer.observe($breakpoint);
+    observer.observe($skillsBreakpoint);
+    observer.observe($welcomeBreakpoint);
 }
