@@ -295,7 +295,6 @@ h2{
 
 .proyectos{
     width: 100%;
-    min-height: 100vh;
 }
 
 .selectors-container{
@@ -367,6 +366,14 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    height: 0;
+    border-radius: 1.5rem;
+}
+
+
+.collapsed{
+    height: 100%;
 }
 
 
@@ -380,12 +387,51 @@ h2{
     box-shadow: -1px -1px 37px 5px rgba(244,108,149,0.6);
 }
 
+.sites-container .card{
+    background-color: #7379E1;
+    box-shadow: -1px -1px 37px 5px rgba(115,121,225,0.61);
+}
+
+.sites-container .img-description li{
+    color: white;
+}
+
+.sites-container .vivo-link{
+    background-color: white;
+    color: #7379E1;
+}
+
+.apps-container .card{
+    background-color: brown;
+    box-shadow: -1px -1px 37px 5px rgba(165, 42, 42, 0.61);
+}
+
+.apps-container .img-description li{
+    color: white;
+}
+
+.apps-container .vivo-link{
+    background-color: white;
+    color: brown;
+}
+
 .proyectos h4{
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.components-container h4{
     color: #F46C95;
+}
+
+.sites-container h4{
+    color: #7379E1;
+}
+
+.apps-container h4{
+    color: brown;
 }
 
 .img-container{
@@ -419,7 +465,7 @@ h2{
     font-size: 1.3rem;
     margin: 1.5rem 0 1.5rem 0;
     text-align: center;
-    color: #23283E;
+    color: white;
    
 }
 
@@ -433,11 +479,11 @@ h2{
 }
 
 .vivo-link{
-    color: white;
+    color:#F46C95;
     font-size: 1.5rem;
     text-decoration: none;
     padding: 0.3rem 0.5rem;
-    background-color: #7379E1;
+    background-color: white;
     border-radius: 1.5rem;
     transition: all 0.4s ease-in-out;
 }
@@ -448,10 +494,14 @@ h2{
 
 
 .git-link i{
-    color: #7379E1;
+    color: black;
     font-size: 2rem;
     text-decoration: none;
     margin-left: 0.5rem;
+}
+
+.git-link i:hover{
+    color: white;
 }
 
 
