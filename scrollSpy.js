@@ -32,7 +32,7 @@ export default function scrollSpy(){
 
     //creamos un objeto observador, tiene como parametro una callback y un objeto que servira para setear las propiedades del objeto
     const observer = new IntersectionObserver(cb,{
-        threshold: ".5"
+        threshold: ".35"
     });
 
     // utilizamos la funcion observe del objeto y le asignamos como parametro el elemento que queremos observar

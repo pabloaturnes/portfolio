@@ -376,6 +376,7 @@ h2{
 
 .collapsed{
     height: 100%;
+    overflow: visible;
 }
 
 
@@ -806,8 +807,6 @@ h2{
 
 
 
-
-
     .contact-form{
         width: 100%;
         align-items: center;
@@ -825,6 +824,7 @@ h2{
     .contact-form button{
         width: 100%;
     }
+
 
 
 
